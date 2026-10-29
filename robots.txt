@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nhik-trans1.vercel.app/sitemap.xml
+Sitemap: https://nhik.com.ua/sitemap.xml
