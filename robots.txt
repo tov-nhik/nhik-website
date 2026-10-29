@@ -1,0 +1,6 @@
+# robots.txt — Нафтохімічна інвестиційна компанія
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nhik-trans1.vercel.app/sitemap.xml
