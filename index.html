@@ -43,7 +43,7 @@
 
         gtag('config', 'G-H7QYMKLGKM');
     </script>
-    
+
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -124,16 +124,32 @@
 
             <div class="hidden xl:flex items-center gap-4 z-20">
                 <div class="flex flex-col text-right">
-                    <a href="tel:+380930352767" class="text-sm font-bold text-purple-950 hover:text-purple-600 transition-colors">+38 (093) 035-27-67</a>
+                    <a href="tel:+380930352767"
+                        onclick="gtag('event', 'click_phone', {'event_category': 'Contact', 'event_label': 'Header Phone'});"
+                        class="text-sm font-bold text-purple-950 hover:text-purple-600 transition-colors" >+38 (093) 035-27-67</a>
                 </div>
                 <div class="flex gap-2">
-                    <a href="javascript:void(0)" onclick="openViber('380930352767')" title="Viber" aria-label="Зв'язатися у Viber" class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
+                    <a href="javascript:void(0)" 
+                        onclick="gtag('event', 'click_viber', {'event_category': 'Messenger', 'event_label': 'Header Viber'}); openViber('380930352767');"
+                        title="Viber" 
+                        aria-label="Зв'язатися у Viber" 
+                        class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
                         <i class="fa-brands fa-viber"></i>
                     </a>
-                    <a href="https://t.me/+380930352767" target="_blank" title="Telegram" aria-label="Зв'язатися у Telegram" class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
+                    <a href="https://t.me/+380930352767" 
+                        target="_blank" 
+                        onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Header Telegram'});"
+                        title="Telegram" 
+                        aria-label="Зв'язатися у Telegram" 
+                        class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
-                    <a href="https://wa.me/380930352767" target="_blank" title="WhatsApp" aria-label="Зв'язатися у WhatsApp" class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
+                    <a href="https://wa.me/380930352767" 
+                        target="_blank"
+                        onclick="gtag('event', 'click_whatsapp', {'event_category': 'Messenger', 'event_label': 'Header WhatsApp'});" 
+                        title="WhatsApp" 
+                        aria-label="Зв'язатися у WhatsApp" 
+                        class="w-8 h-8 bg-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 rounded-full flex items-center justify-center transition-all text-lg">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
@@ -154,18 +170,27 @@
             <div class="p-4 bg-purple-50 flex flex-col gap-3">
                 <p class="text-xs text-purple-900 font-bold uppercase tracking-wider">Контактні телефони:</p>
                 <div class="flex flex-col gap-1 text-sm font-bold text-gray-900">
-                    <a href="tel:+380930352767" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (093) 035-27-67</a>
-                    <a href="tel:+380503562979" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (050) 356-29-79</a>
-                    <a href="tel:+380687775445" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (068) 777-54-45</a>
+                    <a href="tel:+380930352767" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (093) 035-27-67</a>
+                    <a href="tel:+380503562979" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (050) 356-29-79</a>
+                    <a href="tel:+380687775445" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (068) 777-54-45</a>
+                    <a href="tel:+380967215730" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-700"><i class="fa-solid fa-phone text-purple-600 mr-2"></i>+38 (096) 721-57-30</a>
                 </div>
                 <div class="flex gap-2 mt-2">
-                    <a href="javascript:void(0)" onclick="openViber('380930352767')" class="flex-1 bg-purple-700 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
+                    <a href="javascript:void(0)" 
+                        onclick="gtag('event', 'click_viber', {'event_category': 'Messenger', 'event_label': 'Viber'}); openViber('380930352767');" 
+                        class="flex-1 bg-purple-700 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
                         <i class="fa-brands fa-viber text-sm"></i> Viber
                     </a>
-                    <a href="https://t.me/+380930352767" target="_blank" class="flex-1 bg-purple-900 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
+                    <a href="https://t.me/+380930352767" 
+                        target="_blank"
+                        onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Telegram'});" 
+                        class="flex-1 bg-purple-900 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
                         <i class="fa-brands fa-telegram text-sm"></i> Telegram
                     </a>
-                    <a href="https://wa.me/380930352767" target="_blank" class="flex-1 bg-green-600 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
+                    <a href="https://wa.me/380930352767" 
+                        target="_blank"
+                        onclick="gtag('event', 'click_whatsapp', {'event_category': 'Messenger', 'event_label': 'WhatsApp'});"  
+                        class="flex-1 bg-green-600 text-white text-center py-2 rounded-lg text-xs font-bold uppercase flex items-center justify-center gap-1">
                         <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
                     </a>
                 </div>
@@ -191,7 +216,7 @@
                     <a href="#order-forms" class="bg-purple-600 hover:bg-purple-500 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-purple-950/60 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3 text-base md:text-lg">
                         <i class="fa-solid fa-file-signature"></i> Оформити заявку
                     </a>
-                    <a href="tel:+380930352767" class="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-xl border border-white/30 transition-all text-center flex items-center justify-center gap-2">
+                    <a href="tel:+380930352767" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-xl border border-white/30 transition-all text-center flex items-center justify-center gap-2">
                         <i class="fa-solid fa-phone"></i> Зателефонувати
                     </a>
                 </div>
@@ -344,8 +369,11 @@
                             Інформація про бензовози, що звільняються у різних регіонах України. Замовляйте авто за вигіднішим тарифом за рахунок мінімальної вартості подачі!
                         </p>
                     </div>
-                    <a href="https://t.me/+3HXHUKwegiQ4N2Vi" target="_blank" rel="noopener noreferrer" 
-                    class="w-full bg-purple-600 hover:bg-purple-500 text-white text-center py-3 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
+                    <a href="https://t.me/+3HXHUKwegiQ4N2Vi" 
+                        target="_blank" 
+                        onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Channel Telegram'});" 
+                        rel="noopener noreferrer" 
+                        class="w-full bg-purple-600 hover:bg-purple-500 text-white text-center py-3 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
                         <i class="fa-brands fa-telegram text-base"></i> Підписатися на Вільні Авто
                     </a>
                 </div>
@@ -366,7 +394,10 @@
                             Актуальні ціни на поставки дизельного пального (Євро-5) та бензину А-95. Будьте в курсі останніх змін цін та спецпропозицій на паливо різного об'єму.
                         </p>
                     </div>
-                    <a href="https://t.me/+_OEBrRJQkt5mMTM6" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://t.me/+_OEBrRJQkt5mMTM6" 
+                    target="_blank"
+                    onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Channel Telegram'});"  
+                    rel="noopener noreferrer" 
                     class="w-full bg-purple-600 hover:bg-purple-500 text-white text-center py-3 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
                         <i class="fa-brands fa-telegram text-base"></i> Підписатися на Оптові поставки пального
                     </a>
@@ -661,27 +692,38 @@
 
                         <div class="mb-6 space-y-3">
                             <p class="text-xs text-purple-300 font-bold uppercase tracking-wider">Телефони для зв'язку:</p>
-                            <a href="tel:+380930352767" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
+                            <a href="tel:+380930352767" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
                                 <i class="fa-solid fa-phone text-purple-400"></i> +38 (093) 035-27-67
                             </a>
-                            <a href="tel:+380503562979" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
+                            <a href="tel:+380503562979" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
                                 <i class="fa-solid fa-phone text-purple-400"></i> +38 (050) 356-29-79
                             </a>
-                            <a href="tel:+380687775445" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
+                            <a href="tel:+380687775445" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
                                 <i class="fa-solid fa-phone text-purple-400"></i> +38 (068) 777-54-45
+                            </a>
+                            <a href="tel:+380967215730" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="flex items-center gap-3 text-base md:text-lg font-bold hover:text-purple-300 transition-colors bg-purple-900/60 p-3 rounded-xl border border-purple-800">
+                                <i class="fa-solid fa-phone text-purple-400"></i> +38 (096) 721-57-30
                             </a>
                         </div>
 
                         <div class="mb-6">
                             <p class="text-xs text-purple-300 font-bold uppercase tracking-wider mb-3">Напишіть нам у месенджер:</p>
                             <div class="grid grid-cols-3 gap-2">
-                                <a href="javascript:void(0)" onclick="openViber('380930352767')" class="bg-purple-700 hover:bg-purple-600 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors">
+                                <a href="javascript:void(0)" 
+                                    onclick="gtag('event', 'click_viber', {'event_category': 'Messenger', 'event_label': 'Viber'}); openViber('380930352767');"  
+                                    class="bg-purple-700 hover:bg-purple-600 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors">
                                     <i class="fa-brands fa-viber text-base"></i> Viber
                                 </a>
-                                <a href="https://t.me/+380930352767" target="_blank" class="bg-purple-900 hover:bg-purple-800 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors border border-purple-700">
+                                <a href="https://t.me/+380930352767" 
+                                    target="_blank"
+                                    onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Telegram'});" 
+                                    class="bg-purple-900 hover:bg-purple-800 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors border border-purple-700">
                                     <i class="fa-brands fa-telegram text-base"></i> Telegram
                                 </a>
-                                <a href="https://wa.me/380930352767" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors">
+                                <a href="https://wa.me/380930352767" 
+                                    target="_blank"
+                                    onclick="gtag('event', 'click_whatsapp', {'event_category': 'Messenger', 'event_label': 'WhatsApp'});"   
+                                    class="bg-green-600 hover:bg-green-500 text-white text-center py-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-1.5 transition-colors">
                                     <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
                                 </a>
                             </div>
@@ -797,26 +839,39 @@
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-phone text-purple-500"></i>
-                            <a href="tel:+380930352767" class="hover:text-purple-400 font-bold text-white">+38 (093) 035-27-67</a>
+                            <a href="tel:+380930352767" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-400 font-bold text-white">+38 (093) 035-27-67</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-phone text-purple-500"></i>
-                            <a href="tel:+380503562979" class="hover:text-purple-400 font-bold text-white">+38 (050) 356-29-79</a>
+                            <a href="tel:+380503562979" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-400 font-bold text-white">+38 (050) 356-29-79</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-phone text-purple-500"></i>
-                            <a href="tel:+380687775445" class="hover:text-purple-400 font-bold text-white">+38 (068) 777-54-45</a>
+                            <a href="tel:+380687775445" onclick="gtag('event', 'click_phone', {'event_category': 'Contact'});" class="hover:text-purple-400 font-bold text-white">+38 (068) 777-54-45</a>
                         </li>
                     </ul>
                     <div class="pt-2">
                         <div class="flex items-center gap-2.5">
-                            <a href="javascript:void(0)" onclick="openViber('380930352767')" title="Viber" aria-label="Зв'язатися у Viber" class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
+                            <a href="javascript:void(0)" 
+                                onclick="gtag('event', 'click_viber', {'event_category': 'Messenger', 'event_label': 'Viber'}); openViber('380930352767');" 
+                                title="Viber" aria-label="Зв'язатися у Viber" 
+                                class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
                                 <i class="fa-brands fa-viber text-lg"></i>
                             </a>
-                            <a href="https://t.me/+380930352767" target="_blank" rel="noopener" title="Telegram" aria-label="Зв'язатися у Telegram" class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
+                            <a href="https://t.me/+380930352767" 
+                                target="_blank" rel="noopener"
+                                onclick="gtag('event', 'click_telegram', {'event_category': 'Messenger', 'event_label': 'Telegram'});" 
+                                title="Telegram" 
+                                aria-label="Зв'язатися у Telegram" 
+                                class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
                                 <i class="fa-brands fa-telegram text-lg"></i>
                             </a>
-                            <a href="https://wa.me/380930352767" target="_blank" rel="noopener" title="WhatsApp" aria-label="Зв'язатися у WhatsApp" class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
+                            <a href="https://wa.me/380930352767" 
+                                target="_blank" rel="noopener"
+                                onclick="gtag('event', 'click_whatsapp', {'event_category': 'Messenger', 'event_label': 'WhatsApp'});"   
+                                title="WhatsApp" 
+                                aria-label="Зв'язатися у WhatsApp" 
+                                class="w-9 h-9 bg-purple-900/50 hover:bg-purple-600 text-purple-300 hover:text-white rounded-xl flex items-center justify-center transition-all border border-purple-700/50">
                                 <i class="fa-brands fa-whatsapp text-lg"></i>
                             </a>
                         </div>
@@ -965,6 +1020,11 @@
                 if (result.ok) {
                     form.reset();
                     showSuccessModal(); // Викликом красиве вікно замість alert()
+                    // Після успішного надсилання форми в Telegram:
+                    gtag('event', 'generate_lead', {
+                        'event_category': 'Form',
+                        'event_label': 'B2B Fuel Request'
+                    });
                 } else {
                     alert('Помилка при відправці. Зв\'яжіться з нами за телефоном +38 (093) 035-27-67.');
                 }
